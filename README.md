@@ -14,4 +14,4 @@
 
 ---
 
-Note: Special thanks to ChatGPT for helping me create this repository in a single day. 😇
+Note: I unabashedly admit using ChatGPT for helping me create this repository in a single day. 😇
