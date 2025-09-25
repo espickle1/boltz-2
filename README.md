@@ -9,7 +9,9 @@
 
 ### References:
 [Boltz-2](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1)
+
 [Boltz-1](https://www.biorxiv.org/content/10.1101/2024.11.19.624167v4)
+
 [ColabFold MSA generation](https://pubmed.ncbi.nlm.nih.gov/35637307/)
 
 ---
