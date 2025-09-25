@@ -8,10 +8,8 @@
 2. Run Boltz-2 by uploading yaml file. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/espickle1/boltz-2/blob/main/src/boltz_2_prediction.ipynb)
 
 ### References:
-[Boltz-2](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1)
-
-[Boltz-1](https://www.biorxiv.org/content/10.1101/2024.11.19.624167v4)
-
+[Boltz-2](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1) ; 
+[Boltz-1](https://www.biorxiv.org/content/10.1101/2024.11.19.624167v4) ; 
 [ColabFold MSA generation](https://pubmed.ncbi.nlm.nih.gov/35637307/)
 
 ---
