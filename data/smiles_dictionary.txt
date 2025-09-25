@@ -1,0 +1,6 @@
+Kdo(a2-4)a-Kdo: CID196322
+C1[C@H]([C@H]([C@H](O[C@]1(C(=O)O)O[C@@H]2C[C@@](O[C@@H]([C@@H]2O)[C@@H](CO)O)(C(=O)O)O)[C@@H](CO)O)O)O
+O86 O-antigen: CID91862843
+C[C@H]1[C@H]([C@H]([C@@H]([C@@H](O1)O[C@@H]2[C@H]([C@H]([C@H](O[C@H]2O[C@@H]3[C@H]([C@H](O[C@@H]([C@@H]3O)CO)O[C@@H]4[C@H]([C@H](O[C@@H]([C@@H]4O)CO)O)NC(=O)C)NC(=O)C)CO)O)O[C@@H]5[C@@H]([C@H]([C@H]([C@H](O5)CO)O)O)O)O)O)O
+LPS O-antigen:
+C[C@@H]1[C@H](C[C@H]([C@H](O1)O[C@H]2[C@@H]([C@H](O[C@@H]([C@H]2O[C@@H]3[C@@H]([C@H]([C@H]([C@H](O3)CO)O)O)O)O[C@H]4[C@@H](O[C@H]([C@@H]([C@@H]4O)O)O[C@H]5[C@H]([C@H](O[C@@H]([C@@H]5O)O[C@H]6[C@H]([C@@H]([C@H](O[C@@H]6O[C@H]7[C@@H](O[C@H]([C@@H]([C@@H]7O)O)O)C)CO)O)O[C@@H]8[C@@H](C[C@@H]([C@H](O8)C)O)O)CO)O)C)CO)O)O)O
