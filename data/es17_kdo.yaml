@@ -14,6 +14,3 @@ sequences:
   - ligand:
       id: Kdo2
       smiles: 'C1[C@H]([C@H]([C@H](O[C@]1(C(=O)O)O[C@@H]2C[C@@](O[C@@H]([C@@H]2O)[C@@H](CO)O)(C(=O)O)O)[C@@H](CO)O)O)O'
-constraints:
-  - pocket:
-      binder: Kdo2
