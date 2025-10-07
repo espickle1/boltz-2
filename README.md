@@ -13,7 +13,3 @@ Note that big protein-ligand complex will exhaust Google Colab's memory (1700 re
 [Boltz-2](https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1) ; 
 [Boltz-1](https://www.biorxiv.org/content/10.1101/2024.11.19.624167v4) ; 
 [ColabFold MSA generation](https://pubmed.ncbi.nlm.nih.gov/35637307/)
-
----
-
-Note: I unabashedly admit using ChatGPT for helping me create this repository in a single day. 😇
