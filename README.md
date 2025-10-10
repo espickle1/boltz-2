@@ -13,4 +13,4 @@
 [Boltz-1](https://www.biorxiv.org/content/10.1101/2024.11.19.624167v4) ; 
 [ColabFold MSA generation](https://pubmed.ncbi.nlm.nih.gov/35637307/)
 
-* There are many more functions and parameters to run Boltz-2; I will be updating these programs as time allows.
+* Need help? Got questions, comments, or suggestions? Please contact James.
