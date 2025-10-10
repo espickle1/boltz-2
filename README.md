@@ -1,4 +1,4 @@
-## User-friendlier site to use Boltz-2 (for the Maresso Lab and friends)
+## User-friendy interface for Boltz-2 (for the Maresso Lab)
 
 ### Boltz-2:
 [Boltz-2](https://github.com/jwohlwend/boltz) is a fast deep learning model for biomolecular interaction prediction - in this case, protein(s) to __any__ ligand(s). Boltz-1 was the first open source model that approached AlphaFold3 in terms of structural accuracy prediction, and Boltz-2 is an improvement upon Boltz-1. Most importantly, Boltz has no restrictions on what ligand to model. As long as you can find Protein Data Bank identifier or SMILES molecular description, you are good to go!
