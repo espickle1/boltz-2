@@ -14,19 +14,23 @@ An example input file (.yaml) would look something like the following:
 ```
 sequences:
   - protein:
-      id: [A]
+      id: [a, b, c]
       sequence: LNGRGATGSMRGVVKLTTQAG...
   - protein:
-      id: [B]
-      sequence: LNGRGATGSMRGVVKLTTQAG...
+      id: [d]
+      sequence: MAIETNAVVVTDLNPLYPRDR...
   - ligand:
       id: FE
       ccd: FE
   - ligand:
-      id: Kdo2
+      id: kdo3
       smiles: 'C1[C@H]([C@H]([C@H](O[C@]1(C(=O)O)O[C@@H]2C[C@@](O[C@@H]([C@@H]2O)[C@@H](CO)O)(C(=O)O)O)[C@@H](CO)O)O)O'
 constraints:
   - pocket:
-      binder: Kdo2
-      contacts: [[A, ...], [A, ...]]
+      binder: kdo3
+      contacts: [[a, ...], [b, ...]]
+properties:
+  - affinity:
+      binder: kdo3
+      contacts: [[a, ...], [b, ...]]
 ```
