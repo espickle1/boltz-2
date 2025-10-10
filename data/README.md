@@ -32,5 +32,4 @@ constraints:
 properties:
   - affinity:
       binder: kdo3
-      contacts: [[a, ...], [b, ...]]
 ```
