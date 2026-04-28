@@ -53,7 +53,32 @@ def main():
     parser.add_argument("--diffusion_samples_affinity", type=int, default=4)
     parser.add_argument("--no_msa_server", action="store_true",
                         help="Disable --use_msa_server flag")
+    parser.add_argument("--accelerator", choices=["gpu", "cpu", "tpu"], default="gpu",
+                        help="Accelerator passed to boltz (default: gpu / CUDA)")
+    parser.add_argument("--devices", type=int, default=1,
+                        help="Number of devices passed to boltz (default: 1)")
+    parser.add_argument("--skip_cuda_check", action="store_true",
+                        help="Skip the torch.cuda.is_available() preflight check")
     args = parser.parse_args()
+
+    # Preflight: verify CUDA is actually available when accelerator=gpu, otherwise
+    # boltz silently falls back / errors deep inside the run.
+    if args.accelerator == "gpu" and not args.skip_cuda_check:
+        try:
+            import torch
+        except ImportError:
+            print("ERROR: torch is not importable; cannot verify CUDA. "
+                  "Install with `pip install boltz[cuda]` or pass --skip_cuda_check.",
+                  file=sys.stderr)
+            sys.exit(2)
+        if not torch.cuda.is_available():
+            print("ERROR: --accelerator=gpu but torch.cuda.is_available() is False. "
+                  "Install a CUDA-enabled torch (`pip install boltz[cuda]`), "
+                  "re-run with --accelerator cpu, or pass --skip_cuda_check.",
+                  file=sys.stderr)
+            sys.exit(2)
+        print(f"CUDA OK: {torch.cuda.device_count()} device(s), "
+              f"using {torch.cuda.get_device_name(0)} (torch {torch.__version__})")
 
     # Collect YAML files
     yaml_files = sorted(
@@ -87,6 +112,8 @@ def main():
             "--step_scale", str(args.step_scale),
             "--sampling_steps_affinity", str(args.sampling_steps_affinity),
             "--diffusion_samples_affinity", str(args.diffusion_samples_affinity),
+            "--accelerator", args.accelerator,
+            "--devices", str(args.devices),
         ]
         if not args.no_msa_server:
             cmd.append("--use_msa_server")
